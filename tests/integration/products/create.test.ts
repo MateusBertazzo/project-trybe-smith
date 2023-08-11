@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 describe('POST /products', function () { 
   beforeEach(function () { sinon.restore(); });
-  it('testando camada Service metodo Post', async function() {
+  it('teste de integração da camada Service metodo Post', async function() {
     // Arrange
     const mockProduct = { name: 'test', price: '55.55', orderId: 9 }
     const productBuild = ProductModel.build(mockProduct)
