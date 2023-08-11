@@ -13,6 +13,14 @@ const createProduct = async (req: Request, res: Response): Promise<Response> => 
 
   return res.status(201).json(product.message);
 };
+
+const getAllProduct = async (req: Request, res: Response) :Promise<Response> => {
+  const allProducts = await productService.getAllProduct();
+
+  return res.status(200).send(allProducts.message);
+};
+
 export default { 
   createProduct,
+  getAllProduct,
 };
