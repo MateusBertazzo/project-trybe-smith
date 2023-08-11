@@ -16,7 +16,7 @@ const createProduct = async (req: Request, res: Response): Promise<Response> => 
 
 const getAllProduct = async (req: Request, res: Response) :Promise<Response> => {
   const allProducts = await productService.getAllProduct();
-
+  
   return res.status(200).send(allProducts.message);
 };
 
