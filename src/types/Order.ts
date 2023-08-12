@@ -2,12 +2,18 @@ export type Order = {
   id: number;
   userId: number;
   productId?: number;
-  productsIds?: { id: number }[]
+  productIds?: { id: number }[]
+};
+
+export type OrderArray = {
+  id: number;
+  userId: number;
+  productIds?: number[]
 };
 
 export type ServiceResponseSuccessOrder = {
   status: 'SUCCESSFUL', 
-  message: Order[]
+  message: Order[] | OrderArray[]
 };
 
 export type ServiceResponseErrorOrder = {

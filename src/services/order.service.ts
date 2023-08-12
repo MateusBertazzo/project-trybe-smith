@@ -7,11 +7,14 @@ const getAllOrders = async (): Promise<ResponseApi> => {
     include: [{ model: ProductModel, attributes: ['id'], as: 'productIds' }],
   });
 
+  console.log(allOrders);
+
   const objectList = allOrders.map((order) => ({
     id: order.dataValues.id,
     userId: order.dataValues.userId,
-    productIds: order.dataValues.productsIds?.map((product) => product.id),
+    productIds: order.dataValues.productIds?.map((product) => product.id),
   }));
+  console.log(objectList);
 
   return { status: 'SUCCESSFUL', message: objectList };
 };
