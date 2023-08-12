@@ -12,11 +12,6 @@ routeProduct.post(
   productController.createProduct,
 );
 
-routeProduct.get(
-  '/products', 
-  validateProductInput.validateName,
-  validateProductInput.validatePrice,
-  productController.getAllProduct,
-);
+routeProduct.get('/products', productController.getAllProduct);
 
 export default routeProduct;
