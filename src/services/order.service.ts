@@ -9,9 +9,7 @@ const getAllOrders = async (): Promise<ResponseApi> => {
 
   const objectList = allOrders.map((order) => {
     const { id, userId, productIds } = order.dataValues;
-    // id: order.dataValues.id,
-    // userId: order.dataValues.userId,
-    // productIds: order.dataValues.productIds?.map((product) => product.id),
+
     return {
       id, 
       userId,
