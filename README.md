@@ -29,7 +29,7 @@ Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da
 - `docker-compose up -d`
 - `docker exec -it trybesmith bash`
 - `npm install`
-- `npm run restore`
+- `npx db:reset`
 - `npm run dev`
 
 **Localmente:**
@@ -37,6 +37,6 @@ Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da
 **Necessita ter um banco de dados(MySql) instalado localmente**
 
 - `npm install`
-- `npm run restore`
+- `npx db:reset`
 - `npm run dev`
 
