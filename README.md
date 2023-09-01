@@ -1,10 +1,42 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Projeto TrybeSmith
+
+Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da Trybe.
+
+
+  <summary><strong>O que foi feito</strong></summary></br>
+
+  Neste projeto desenvolvi uma API e um banco de dados para uma loja de itens medievais utilizando Typescript e arquitetura MSC.
+
+  Nesta aplicação, é possível realizar as operações básicas `CRUD`, em um determinado banco de dados.
+
+  A aplicação foi desenvolvida com:
+
+  - `Node.js`
+  - `TypeScript`
+  - `JWT`
+  - `Arquitetura MSC`
+  - `docker`
+  - `docker-compose`
+  - `MySql`
+  - `Express`;
+
+  <summary><strong>Como rodar o projeto</strong></summary></br>
+
+  **Com Docker:**
+
+  **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior.
+
+- `docker-compose up -d`
+- `docker exec -it trybesmith bash`
+- `npm install`
+- `npm run restore`
+- `npm run dev`
+
+**Localmente:**
+
+**Necessita ter um banco de dados(MySql) instalado localmente**
+
+- `npm install`
+- `npm run restore`
+- `npm run dev`
+
